@@ -3,14 +3,13 @@ import { LinearGradient } from "expo-linear-gradient";
 import {
   Container,
   Logo,
-  TituloLogin,
+  TituloSenha,
   TextoInput,
-  TextoPergunta,
-  BotaoEntrar,
-  TextoEntrar,
+  BotaoAlterar,
+  TextoAlterar,
 } from "./styles";
 
-const Login = () => {
+const Senha = () => {
   return (
     <LinearGradient
       style={{
@@ -23,17 +22,15 @@ const Login = () => {
     >
       <Container>
         <Logo source={require("../../assets/img/logo.jpeg")} />
-        <TituloLogin>Login</TituloLogin>
-        <TextoInput placeholder="Digite seu login" />
-        <TextoInput placeholder="Digite sua senha" />
-        <TextoPergunta>Esqueceu a senha? Clique aqui!</TextoPergunta>
-        <BotaoEntrar>
-          <TextoEntrar>ENTRAR</TextoEntrar>
-        </BotaoEntrar>
-        <TextoPergunta>Não possui cadastro? Cadastre-se!</TextoPergunta>
+        <TituloSenha>Criar Senha</TituloSenha>
+        <TextoInput placeholder="Digite sua nova senha" />
+        <TextoInput placeholder="Repita sua nova senha" />
+        <BotaoAlterar>
+          <TextoAlterar>ALTERAR</TextoAlterar>
+        </BotaoAlterar>
       </Container>
     </LinearGradient>
   );
 };
 
-export default Login;
+export default Senha;

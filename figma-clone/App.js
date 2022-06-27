@@ -1,23 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './components/login/Login';
-
+import Senha from "./components/senha/Senha";
+import Marketplace from "./components/marketplace/Marketplace";
+import Produtos from "./components/produtos/Produtos";
+import Favoritos from "./components/favoritos/Favoritos";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text> Uau, world! 😉</Text>
-
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Favoritos/>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
