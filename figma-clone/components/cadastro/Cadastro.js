@@ -44,7 +44,7 @@ export const Cadastro = () => {
           onChangeText={text => setSenha(text)} />
           <Pressable onPress={handlePasswordVisibility}>
           
-        </Pressable>
+          </Pressable>
           <BotaoCadastrar>
             <TextoCadastrar>CADASTRAR</TextoCadastrar>
           </BotaoCadastrar>
