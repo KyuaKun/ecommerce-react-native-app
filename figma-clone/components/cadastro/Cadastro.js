@@ -1,12 +1,15 @@
-import React from "react";
-import { StyleSheet, Pressable, TextInput, View } from 'react-native';
+import {useState} from 'react';
 
+import { React} from "react";
+import { StyleSheet, Pressable, TextInput, View } from 'react-native';
+import { LinearGradient } from "expo-linear-gradient";
 import { useTogglePasswordVisibility } from './hooks';
-import {Container,TituloCadastro,TextoEntrar,TextoInput,TextoPergunta,BotaoEntrar } from './styles'
+import {Container,TituloCadastro,TextoEntrar,TextoInput,TextoCadastrar,TextoPergunta,BotaoCadastrar,UserCard } from './styles'
 
 export const Cadastro = () => {
-
-    const [senha, setSenha] = useState('');
+    const { passwordVisibility, rightIcon, handlePasswordVisibility } =
+    useTogglePasswordVisibility();
+  const [senha, setSenha] = useState();
     return (
         <LinearGradient
         style={{
@@ -39,7 +42,9 @@ export const Cadastro = () => {
           value={senha}
           enablesReturnKeyAutomatically
           onChangeText={text => setSenha(text)} />
+          <Pressable onPress={handlePasswordVisibility}>
           
+        </Pressable>
           <BotaoCadastrar>
             <TextoCadastrar>CADASTRAR</TextoCadastrar>
           </BotaoCadastrar>

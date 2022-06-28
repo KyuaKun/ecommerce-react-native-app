@@ -1,10 +1,10 @@
 import styled from "styled-components/native";
 
 export const UserCard = styled.Image`
-    height:0.5em;
-    width:0.5em;
+    height:2.5em;
+    width:2.5em;
     border-radius:100px;
-    margin-left:100px;
+    margin-left:12em;
 `;
 
 export const Container = styled.View`
