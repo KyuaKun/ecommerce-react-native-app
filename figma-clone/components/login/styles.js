@@ -26,9 +26,9 @@ export const TextoInput = styled.TextInput`
   border-radius: 5px;
   border-width: 2px;
   border-color: #00ffff;
-  margin-top: 30px;
-  height: 30px;
-  padding: 12px;
+  margin-top: 10px;
+  width: 60%;
+  padding: 5px;
 `;
 
 export const TextoPergunta = styled.Text`
@@ -43,9 +43,9 @@ export const BotaoEntrar = styled.View`
   border-radius: 5px;
   border-width: 2px;
   border-color: #00ffff;
-  margin-top: 30px;
-  height: 30px;
-  width: 130px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 30%;
 `;
 
 export const TextoEntrar = styled.Text`
