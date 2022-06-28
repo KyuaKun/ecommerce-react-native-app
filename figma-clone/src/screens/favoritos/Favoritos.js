@@ -9,7 +9,7 @@ const Favoritos = () => {
         <Icon>Icone</Icon>
         <TitleFavoritos>Favoritos</TitleFavoritos>
         <Image
-          source={require("../../assets/img/logo.jpeg")}
+          source={require("../../../assets/img/logo.jpeg")}
           style={{ width: 60, height: 60, borderRadius: 30 }}
         />
       </Navbar>

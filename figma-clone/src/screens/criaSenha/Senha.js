@@ -21,7 +21,7 @@ const Senha = () => {
       colors={["#00ffff59", "#ffff"]}
     >
       <Container>
-        <Logo source={require("../../assets/img/logo.jpeg")} />
+        <Logo source={require("../../../assets/img/logo.jpeg")} />
         <TituloSenha>Criar Senha</TituloSenha>
         <TextoInput placeholder="Digite sua nova senha" />
         <TextoInput placeholder="Repita sua nova senha" />

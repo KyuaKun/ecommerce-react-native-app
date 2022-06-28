@@ -1,10 +1,10 @@
 import  React  from 'react';
-import Favoritos from "./components/favoritos/Favoritos";
-import { Cadastro } from "./components/cadastro/Cadastro";
-import Senha from './components/senha/Senha';
-import Marketplace from './components/marketplace/Marketplace';
-import Produto  from './components/produtos/styles';
-import Login from './components/login/Login';
+import Favoritos from "./src/screens/favoritos/Favoritos";
+import { Cadastro } from "./src/screens/cadastroUsuario/Cadastro";
+import Senha from './src/screens/criaSenha/Senha';
+import Marketplace from './src/screens/marketplace/Marketplace';
+import Produto  from './src/screens/produtos/styles';
+import Login from './src/screens/login/Login';
 
 
 export default function App() {

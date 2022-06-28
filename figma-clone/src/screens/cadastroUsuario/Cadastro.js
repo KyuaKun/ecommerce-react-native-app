@@ -21,7 +21,7 @@ export const Cadastro = () => {
         colors={["#00ffff59", "#ffff"]}
       >
         <Container>
-          <UserCard source={require("../../assets/img/logo.jpeg")} />
+          <UserCard source={require("../../../assets/img/logo.jpeg")} />
           <TituloCadastro>Cadastro</TituloCadastro>
           <TextoInput placeholder="Nome" />
           <TextoInput placeholder="CPF" />

@@ -22,7 +22,7 @@ const Marketplace = () => {
         <Icon>Icone</Icon>
         <Titlemarketplace>Marketplace</Titlemarketplace>
         <Image
-          source={require("../../assets/img/logo.jpeg")}
+          source={require("../../../assets/img/logo.jpeg")}
           style={{ width: 60, height: 60, borderRadius: 30 }}
         />
       </Navbar>
@@ -40,11 +40,11 @@ const Marketplace = () => {
         <TitleContent>Categorias +</TitleContent>
         <ContainerImage>
           <Image
-            source={require("../../assets/img/3.jpg")}
+            source={require("../../../assets/img/3.jpg")}
             style={{ width: 80, height: 95, borderRadius: 10 }}
           />
           <Image
-            source={require("../../assets/img/5.jpg")}
+            source={require("../../../assets/img/5.jpg")}
             style={{
               width: 175,
               height: 120,
@@ -52,7 +52,7 @@ const Marketplace = () => {
             }}
           />
           <Image
-            source={require("../../assets/img/1.jpg")}
+            source={require("../../../assets/img/1.jpg")}
             style={{ width: 80, height: 95, borderRadius: 10 }}
           />
         </ContainerImage>
@@ -60,10 +60,10 @@ const Marketplace = () => {
       <Fuuter>
         <TitleContent>Criadores</TitleContent>
         <ContainerImage>
-          <ImgCreators source={require("../../assets/img/logo.jpeg")} />
-          <ImgCreators source={require("../../assets/img/logo.jpeg")} />
-          <ImgCreators source={require("../../assets/img/logo.jpeg")} />
-          <ImgCreators source={require("../../assets/img/logo.jpeg")} />
+          <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
+          <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
+          <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
+          <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
         </ContainerImage>
         <NameCreators>
           <Names>Alex</Names>

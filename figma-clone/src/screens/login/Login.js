@@ -24,7 +24,7 @@ const Login = () => {
       colors={["#00ffff59", "#ffff"]}
     />
       <Container>
-        <Logo source={require("../../assets/img/logo.jpeg")} />
+        <Logo source={require("../../../assets/img/logo.jpeg")} />
         <TituloLogin>Login</TituloLogin>
         <TextoInput placeholder="Digite seu login" />
         <TextoInput placeholder="Digite sua senha" />
