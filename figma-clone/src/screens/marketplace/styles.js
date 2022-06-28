@@ -6,7 +6,7 @@ export const Container = styled.View`
   margin: 20px 10px 0 10px;
 `;
 export const Navbar = styled.View`
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 5px 15px;
   flex-direction: row;
   justify-content: space-between;
