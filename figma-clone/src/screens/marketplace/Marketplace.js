@@ -1,31 +1,24 @@
 import { Image, Text } from "react-native";
+import Navbar from "../../components/navbar/Navbar";
+import { LinearGradient } from "expo-linear-gradient";
+
 import {
   AboutUs,
   Container,
   ContainerImage,
   Content,
   Fuuter,
-  Icon,
   IconAction,
   ImgCreators,
   NameCreators,
   Names,
-  Navbar,
   TitleContent,
-  Titlemarketplace,
 } from "./styles";
 
 const Marketplace = () => {
   return (
     <Container>
-      <Navbar>
-        <Icon>Icone</Icon>
-        <Titlemarketplace>Marketplace</Titlemarketplace>
-        <Image
-          source={require("../../../assets/img/logo.jpeg")}
-          style={{ width: 60, height: 60, borderRadius: 30 }}
-        />
-      </Navbar>
+      <Navbar titulo="Marketplace" />
       <Content>
         <TitleContent>Sobre nós...</TitleContent>
         <AboutUs>

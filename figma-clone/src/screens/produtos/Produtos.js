@@ -16,14 +16,7 @@ import {
 const Produtos = () => {
   return (
     <Container>
-      <Navbar>
-        <Text>icone</Text>
-        <TituloProduto>Produtos</TituloProduto>
-        <Image
-          source={require("../../assets/img/logo.jpeg")}
-          style={{ width: 60, height: 60, borderRadius: 30 }}
-        />
-      </Navbar>
+      <Navbar titulo="Produtos" />
 
       <ProdutosContainer>
         <Produto>

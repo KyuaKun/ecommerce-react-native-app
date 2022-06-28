@@ -1,13 +1,13 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
+import Input from "../../components/input/Input";
+import Botao from "../../components/botao/Botao";
+
 import {
   Container,
   Logo,
   TituloLogin,
-  TextoInput,
   TextoPergunta,
-  BotaoEntrar,
-  TextoEntrar,
 } from "./styles";
 import { SafeAreaView } from "react-native";
 
@@ -26,12 +26,10 @@ const Login = () => {
       <Container>
         <Logo source={require("../../../assets/img/logo.jpeg")} />
         <TituloLogin>Login</TituloLogin>
-        <TextoInput placeholder="Digite seu login" />
-        <TextoInput placeholder="Digite sua senha" />
+        <Input texto="Digite seu login" />
+        <Input texto="Digite sua senha" />
         <TextoPergunta>Esqueceu a senha? Clique aqui!</TextoPergunta>
-        <BotaoEntrar>
-          <TextoEntrar>ENTRAR</TextoEntrar>
-        </BotaoEntrar>
+       <Botao texto="ENTRAR" />
         <TextoPergunta>Não possui cadastro? Cadastre-se!</TextoPergunta>
       </Container>
 
