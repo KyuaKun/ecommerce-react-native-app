@@ -24,7 +24,7 @@ const Favoritos = () => {
       <Content>
         <Item>
           <Image
-            source={require("../../assets/img/2.png")}
+            source={require("../../../assets/img/2.png")}
             style={{ width: "40%", height: "100%", borderRadius: 10 }}
           />
           <ItemDescription>
@@ -39,7 +39,8 @@ const Favoritos = () => {
         </Item>
         <Item>
           <Image
-            source={require("../../assets/img/5.jpg")}
+            source={require("
+            ../../assets/img/5.jpg")}
             style={{ width: "40%", height: "100%", borderRadius: 10 }}
           />
           <ItemDescription>
