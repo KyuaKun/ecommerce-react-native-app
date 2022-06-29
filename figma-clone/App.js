@@ -20,7 +20,7 @@ import AlteraCategoria from "./src/screens/alteraCategoria/index";
 export default function App() {
   return (
     <>
-      <Produtos />
+      <Cadastro />
     </>
   );
 }
