@@ -18,10 +18,10 @@ const Titulo = styled.Text`
   color: #120a8f;
 `;
 
-const Navbar = (props) => {
+export const Navbar = (props) => {
   return (
     <Container>
-      <AntDesign name="logout" size={24} color="#120a8f"  />
+      <AntDesign name="logout" size={24} color="#120a8f" />
       <Titulo> {props.titulo} </Titulo>
       <Image
         source={require("../../../assets/img/logo.jpeg")}

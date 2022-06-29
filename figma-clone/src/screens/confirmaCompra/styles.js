@@ -14,7 +14,7 @@ export const Logo = styled.Image`
   margin-bottom: 50px;
 `;
 
-export const TituloSenha = styled.Text`
+export const TituloCompra = styled.Text`
   font-size: 18px;
   color: #120a8f;
   font-weight: bold;

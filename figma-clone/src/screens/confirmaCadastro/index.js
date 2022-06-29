@@ -1,10 +1,15 @@
 import React from "react";
-import { View } from "react-native";
-
-// import { Container } from './styles';
+import { Container, Logo, TituloCadastro } from "./styles";
+import Botao from "./../../components/botao/Botao";
 
 const ConfirmaCadastro = () => {
-  return <View />;
+  return (
+    <Container>
+      <Logo source={require("../../../assets/img/logo.jpeg")} />
+      <TituloCadastro>Usuário cadastrado com sucesso!</TituloCadastro>
+      <Botao texto="LOGIN" />
+    </Container>
+  );
 };
 
 export default ConfirmaCadastro;
