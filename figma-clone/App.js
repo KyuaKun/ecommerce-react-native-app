@@ -16,11 +16,14 @@ import CadastroProduto from "./src/screens/cadastroProduto";
 import CadastroCategoria from "./src/screens/cadastroCategoria";
 import AlteraProduto from "./src/screens/alteraProduto";
 import AlteraCategoria from "./src/screens/alteraCategoria/index";
+import { Footer } from './src/components/footerMenu/FooterMenu';
 
 export default function App() {
   return (
     <>
-      <Cadastro />
+    <Navbar />
+      <Splash />
+      <Footer starAtivo/>
     </>
   );
 }
