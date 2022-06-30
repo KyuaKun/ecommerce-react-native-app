@@ -31,28 +31,18 @@ export const TextoInput = styled.TextInput`
   padding: 5px;
 `;
 
-export const TextoPergunta = styled.Text`
-  color: #120a8f;
-  font-weight: bold;
-  font-size: 11px;
-  margin-top: 3px;
+export const TextInfo = styled.TouchableOpacity`
+    color: #120a8f;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    padding: 10px;
+    font-family: 'Roboto';
 `;
-
-export const BotaoEntrar = styled.View`
-  background-color: white;
-  border-radius: 5px;
-  border-width: 2px;
-  border-color: #00ffff;
-  margin-top: 20px;
-  padding: 10px;
-  width: 30%;
-`;
-
-export const TextoEntrar = styled.Text`
-  font-size: 14px;
-  color: #120a8f;
-  font-weight: bold;
-  align-self: center;
-  padding-top: 3px;
-  padding-bottom: 3px;
+export const TextLink = styled.Text`
+    color: #120a8f;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    font-family: 'Roboto';
 `;

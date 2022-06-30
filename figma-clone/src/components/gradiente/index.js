@@ -1,6 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 
- const Gradiente = (props) => {
+export const Gradiente = (props) => {
+
   if (props.position === "top") {
     return (
       <LinearGradient

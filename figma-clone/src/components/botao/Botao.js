@@ -20,7 +20,7 @@ export const TextoBotao = styled.Text`
   padding-bottom: 3px;
 `;
 
-const Botao = (props) => {
+export const Botao = (props) => {
   return (
     <FormatoBotao>
     <TextoBotao>{props.texto}</TextoBotao>

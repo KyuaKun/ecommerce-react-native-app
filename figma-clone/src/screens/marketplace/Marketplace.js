@@ -1,7 +1,8 @@
+import React from "react";
 import { Image, Text } from "react-native";
 import Navbar from "../../components/navbar/Navbar";
-import { LinearGradient } from "expo-linear-gradient";
-
+import { Gradiente } from "../../components/gradiente";
+import {ReactFragment} from "react-native";
 import {
   AboutUs,
   Container,
@@ -17,8 +18,11 @@ import {
 
 const Marketplace = () => {
   return (
+   <React.Fragment>
+    <Gradiente position="top"></Gradiente>
+    <Navbar titulo="Marketplace" />
     <Container>
-      <Navbar titulo="Marketplace" />
+      
       <Content>
         <TitleContent>Sobre nós...</TitleContent>
         <AboutUs>
@@ -72,6 +76,8 @@ const Marketplace = () => {
         </IconAction>
       </Fuuter>
     </Container>
+    <Gradiente position="bottom"></Gradiente>
+     </React.Fragment>
   );
 };
 

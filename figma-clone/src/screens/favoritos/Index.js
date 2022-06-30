@@ -2,6 +2,7 @@ import { Image, Text } from "react-native";
 import { Container, Content, Item, ItemDescription } from "./styles";
 import Navbar from "../../components/navbar/Navbar";
 import Gradiente from "../../components/gradiente";
+import Footer from "../../components/footerMenu/FooterMenu";
 
 const Favoritos = () => {
   return (
@@ -10,6 +11,8 @@ const Favoritos = () => {
           position='top'
       />
       <Navbar titulo="Favoritos" />
+    {/* <Container> */}
+      
       <Content>
         <Item>
           <Image
@@ -78,6 +81,7 @@ const Favoritos = () => {
       <Gradiente
         position= 'bottom'
       />
+    <Footer/>
     </Container>
   );
 };
