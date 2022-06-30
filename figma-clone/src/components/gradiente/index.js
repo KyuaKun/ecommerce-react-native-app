@@ -32,5 +32,5 @@ export const Gradiente = (props) => {
     );
   }
 };
-
+export default Gradiente;
 
