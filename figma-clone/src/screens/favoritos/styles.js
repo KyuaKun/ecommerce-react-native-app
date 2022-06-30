@@ -3,7 +3,6 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   box-sizing: border-box;
   flex-wrap: nowrap;
-  border: 1px solid black;
   flex: 1;
   flex-direction: column;
 `;
@@ -11,9 +10,9 @@ export const Container = styled.View`
 export const Content = styled.View`
   box-sizing: border-box;
   flex: 1;
-  border: 1px solid blue;
   justify-content: center;
   align-items: center;
+  margin-top: -50;
 `;
 
 export const Item = styled.View`

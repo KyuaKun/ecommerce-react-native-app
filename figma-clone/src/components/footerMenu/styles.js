@@ -4,10 +4,9 @@ export const Container = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  top: 30px;
+  top: 45px;
   background-color: #00ffff59;
-  padding-bottom: 15px;
-  padding-top: 10px;
+  padding: 10px;
 `;
 
 export const Icons = styled.View``;

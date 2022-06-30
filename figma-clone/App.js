@@ -1,7 +1,7 @@
 import React from "react";
-import Favoritos from "./src/screens/favoritos/Favoritos";
+import Favoritos from "./src/screens/favoritos/Index";
 import { Cadastro } from "./src/screens/cadastroUsuario/Cadastro";
-import Senha from "./src/screens/criaSenha/Senha";
+import CriaSenha from "./src/screens/criaSenha/Index";
 import Marketplace from "./src/screens/marketplace/Marketplace";
 import Produtos from "./src/screens/produtos/Produtos";
 import Login from "./src/screens/login/Login";
@@ -23,9 +23,11 @@ export default function App() {
   return (
     <>
       {/* <RecuperarSenha /> */}
-      <Login />
+      {/* <Login /> */}
       {/* <ConfirmaSenha /> */}
-      
+      {/* <CriaSenha /> */}
+      {/* <Favoritos /> */}
+      <CadastroProduto />
     </>
   );
 }

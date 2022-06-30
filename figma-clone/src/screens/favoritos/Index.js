@@ -1,10 +1,14 @@
 import { Image, Text } from "react-native";
 import { Container, Content, Item, ItemDescription } from "./styles";
 import Navbar from "../../components/navbar/Navbar";
+import Gradiente from "../../components/gradiente";
 
 const Favoritos = () => {
   return (
     <Container>
+      <Gradiente
+          position='top'
+      />
       <Navbar titulo="Favoritos" />
       <Content>
         <Item>
@@ -71,6 +75,9 @@ const Favoritos = () => {
           </ItemDescription>
         </Item>
       </Content>
+      <Gradiente
+        position= 'bottom'
+      />
     </Container>
   );
 };
