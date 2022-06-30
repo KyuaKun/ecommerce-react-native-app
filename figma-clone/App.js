@@ -18,10 +18,13 @@ import AlteraProduto from "./src/screens/alteraProduto";
 import AlteraCategoria from "./src/screens/alteraCategoria/index";
 import { Footer } from "./src/components/footerMenu/FooterMenu";
 
+
 export default function App() {
   return (
     <>
-      <Login></Login>
+      {/* <RecuperarSenha /> */}
+      <Login />
+      {/* <ConfirmaSenha /> */}
       
     </>
   );
