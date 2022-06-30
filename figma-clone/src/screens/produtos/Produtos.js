@@ -1,66 +1,51 @@
-import { Text, Image } from "react-native";
-import {
-  Container,
-  Navbar,
-  ProdutosContainer,
-  Produto,
-  FotoProduto,
-  NomeProduto,
-  Preco,
-  Estoque,
-  Contador,
-  Icones,
-} from "./styles";
+import { Container } from "./styles";
 import Footer from "./../../components/footerMenu/FooterMenu";
+import { Navbar } from "./../../components/navbar/Navbar";
+import { Cards } from "../../components/cards/Cards";
+import { AntDesign } from "@expo/vector-icons";
 
 const Produtos = () => {
   return (
     <Container>
       <Navbar titulo="Produtos" />
-      <ProdutosContainer>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 1</NomeProduto>
-          <Preco>Preço R$ 25,00</Preco>
-          <Estoque>10 unidades em estoque</Estoque>
-          <Contador />
-        </Produto>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 2</NomeProduto>
-          <Preco>Preço R$ 50,00</Preco>
-          <Estoque>1 unidade em estoque</Estoque>
-          <Contador />
-        </Produto>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 3</NomeProduto>
-          <Preco>Preço R$ 30,00</Preco>
-          <Estoque>5 unidades em estoque</Estoque>
-          <Contador />
-        </Produto>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 4</NomeProduto>
-          <Preco>Preço R$ 100,00</Preco>
-          <Estoque>15 unidades em estoque</Estoque>
-          <Contador />
-        </Produto>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 5</NomeProduto>
-          <Preco>Preço R$ 40,00</Preco>
-          <Estoque>20 unidades em estoque</Estoque>
-          <Contador />
-        </Produto>
-        <Produto>
-          <FotoProduto source={require("../../../assets/img/5.jpg")} />
-          <NomeProduto>Produto 6</NomeProduto>
-          <Preco>Preço R$ 70,00</Preco>
-          <Estoque>8 unidades em estoque</Estoque>
-          <Contador />
-        </Produto>
-      </ProdutosContainer>
+      <AntDesign name="plus" size={18} color="darkblue" />
+      <Cards
+        nome="Produto 1"
+        preco="R$25,00"
+        estoque="10 unidades em estoque"
+        contador="2"
+      />
+      <Cards
+        nome="Produto 2"
+        preco="R$50,00"
+        estoque="1 unidade em estoque"
+        contador="0"
+      />
+      <Cards
+        nome="Produto 3"
+        preco="R$30,00"
+        estoque="5 unidades em estoque"
+        contador="0"
+      />
+
+      <Cards
+        nome="Produto 4"
+        preco="R$100,00"
+        estoque="15 unidades em estoque"
+        contador="1"
+      />
+      <Cards
+        nome="Produto 5"
+        preco="R$40,00"
+        estoque="20 unidades em estoque"
+        contador="1"
+      />
+      <Cards
+        nome="Produto 6"
+        preco="R$70,00"
+        estoque="8 unidades em estoque"
+        contador="0"
+      />
       <Footer />
     </Container>
   );
