@@ -1,6 +1,7 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import Input from "../../components/input/Input";
+import { InputSenha } from "../../components/inputSenha";
 import Botao from "../../components/botao/Botao";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
@@ -23,16 +24,7 @@ const Login = () => {
         <Logo source={require("../../../assets/img/logo.jpeg")} />
         <TituloLogin>Login</TituloLogin>
         <Input placeholder="Digite seu login" />
-        <Input placeholder="Digite sua senha" />
-        <MaterialCommunityIcons
-          name="eye"
-          size={24}
-          color="#120a8f"
-          style={{
-            marginLeft: "180px",
-            alignSelf: "center",
-          }}
-        />
+        <InputSenha placeholder="Digite sua senha" />
         <TextoPergunta>Esqueceu a senha? Clique aqui!</TextoPergunta>
         <Botao texto="ENTRAR" />
         <TextoPergunta>Não possui cadastro? Cadastre-se!</TextoPergunta>

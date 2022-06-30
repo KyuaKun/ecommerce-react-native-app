@@ -15,8 +15,7 @@ import {
 import { Navbar } from "../../components/navbar/Navbar";
 
 export const Cadastro = () => {
-  const [senha,setSenha] = useState();
-  const [confirmarSenha, setConfirmarSenha] = useState();
+
   return (
     <React.Fragment>
       <LinearGradient
@@ -34,15 +33,8 @@ export const Cadastro = () => {
         <TextoInput placeholder="Nome" />
         <TextoInput placeholder="CPF" />
         <TextoInput placeholder="Data de nascimento" />
-        <TextoInput
-          placeholder="Senha"
-          
-        />
-        <TextoInput
-          placeholder="Confirmar senha"
-          
-          enablesReturnKeyAutomatically
-           />
+        <TextoInput placeholder="Senha" />
+        <TextoInput placeholder="Confirmar senha"/>
           <BotaoCadastrar>
             <TextoCadastrar>CADASTRAR</TextoCadastrar>
           </BotaoCadastrar>

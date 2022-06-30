@@ -9,6 +9,7 @@ const Produtos = () => {
     <Container>
       <Navbar titulo="Produtos" />
       <AntDesign name="plus" size={18} color="darkblue" />
+      <Container>
       <Cards
         nome="Produto 1"
         preco="R$25,00"
@@ -46,6 +47,7 @@ const Produtos = () => {
         estoque="8 unidades em estoque"
         contador="0"
       />
+      </Container>
       <Footer />
     </Container>
   );
