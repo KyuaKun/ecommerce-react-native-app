@@ -1,10 +1,11 @@
 import { LinearGradient } from "expo-linear-gradient";
 
 export const Gradiente = (props) => {
+
   if (props.position === "top") {
     return (
       <LinearGradient
-        colors={["#00ff", "transparent"]}
+        colors={["#00ffff", "transparent"]}
         style={{
           position: "absolute",
           left: 0,
@@ -18,7 +19,7 @@ export const Gradiente = (props) => {
   } else {
     return (
       <LinearGradient
-        colors={["transparent", "#00ff"]}
+        colors={["transparent", "#00ffff"]}
         style={{
           position: "absolute",
           left: 0,

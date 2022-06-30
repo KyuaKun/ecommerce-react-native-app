@@ -21,7 +21,7 @@ import { Footer } from "./src/components/footerMenu/FooterMenu";
 export default function App() {
   return (
     <>
-      <Login></Login>
+      <Marketplace></Marketplace>
       
     </>
   );

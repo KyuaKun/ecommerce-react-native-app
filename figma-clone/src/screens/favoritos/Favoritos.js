@@ -1,11 +1,14 @@
 import { Image, Text } from "react-native";
 import { Container, Content, Item, ItemDescription } from "./styles";
 import Navbar from "../../components/navbar/Navbar";
+import React from "react";
 
 const Favoritos = () => {
   return (
-    <Container>
+    <React.Fragment>
       <Navbar titulo="Favoritos" />
+    <Container>
+      
       <Content>
         <Item>
           <Image
@@ -72,6 +75,7 @@ const Favoritos = () => {
         </Item>
       </Content>
     </Container>
+    </React.Fragment>
   );
 };
 

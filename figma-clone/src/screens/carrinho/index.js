@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactFragment } from "react-native";
 import { View } from "react-native";
 import styled from "styled-components/native";
 import Navbar from "../../components/navbar/Navbar";
@@ -41,8 +42,10 @@ const Description = styled.Text`
 
 const Carrinho = () => {
   return (
-    <Container>
+    <React.Fragment>
       <Navbar titulo="Carrinho" />
+    <Container>
+      
       <Content>
         <BuyInfo>
           <View style={{ flexDirection: "row", flex: 1 }}>
@@ -73,6 +76,7 @@ const Carrinho = () => {
         </BuyInfo>
       </Content>
     </Container>
+    </React.Fragment>
   );
 };
 

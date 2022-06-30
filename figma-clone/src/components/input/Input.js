@@ -7,11 +7,12 @@ export const TextoInput = styled.TextInput`
   border-width: 2px;
   border-color: #00ffff;
   margin-top: 10px;
-  width: 60%;
+  width:  188px;
+  height: 31px;
   padding: 5px;
 `;
 
-const Input = ({ placeholder }) => {
+export const Input = ({ placeholder }) => {
   return (
     <>
       <TextoInput placeholder={placeholder} />

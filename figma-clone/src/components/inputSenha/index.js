@@ -2,7 +2,7 @@ import { InputContainer, WrapperInputSenha } from "./styles"
 import { Ionicons } from '@expo/vector-icons';
 
 
-export const InputSenha = ({ placeholder }) => {
+ export const InputSenha = ({ placeholder }) => {
     return (
         <WrapperInputSenha>
             <InputContainer
@@ -22,3 +22,5 @@ export const InputSenha = ({ placeholder }) => {
 
     )
 }
+
+export default InputSenha;
