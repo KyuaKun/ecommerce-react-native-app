@@ -16,7 +16,7 @@ export const TitleContent = styled.Text`
   color: #120a8f;
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 6%;
+  margin: 3% 0 3% 0;
 `;
 
 export const AboutUs = styled.Text`
@@ -24,6 +24,7 @@ export const AboutUs = styled.Text`
   margin-bottom: 18px;
   text-align: center;
   font-weight: bold;
+  margin: 3% 0 3% 0;
 `;
 
 export const ContainerImage = styled.View`
@@ -31,11 +32,7 @@ export const ContainerImage = styled.View`
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-`;
-
-export const Fuuter = styled.View`
-  /* border: 1px solid black; */
-  padding: 0px 15px;
+  margin: 3% 0 3% 0;
 `;
 
 export const ImgCreators = styled.Image`
@@ -43,6 +40,7 @@ export const ImgCreators = styled.Image`
   height: 70px;
   border-radius: 35px;
   border: 3px solid #120a8f;
+  margin: 1% 0 1% 0;
 `;
 
 export const NameCreators = styled.View`
@@ -52,12 +50,4 @@ export const NameCreators = styled.View`
 export const Names = styled.Text`
   font-size: 12px;
   font-weight: bold;
-`;
-
-export const IconAction = styled.View`
-  /* border: 1px solid red; */
-  height: 38px;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
 `;
