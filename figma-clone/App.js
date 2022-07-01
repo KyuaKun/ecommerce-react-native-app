@@ -29,6 +29,7 @@ export default function App() {
       {/* <AlteraProduto /> */}
       {/* <CadastroProduto /> */}
       <Marketplace />
+      {/* <ConfirmaCompra /> */}
     </>
   );
 }

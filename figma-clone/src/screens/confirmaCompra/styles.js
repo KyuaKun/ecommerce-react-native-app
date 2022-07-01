@@ -4,18 +4,19 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
 `;
 
 export const Logo = styled.Image`
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  margin-bottom: 50px;
+  align-self: center;
+  margin-top: 40px;
 `;
 
 export const TituloCompra = styled.Text`
   font-size: 18px;
   color: #120a8f;
   font-weight: bold;
+  margin-top: -40px;
 `;
