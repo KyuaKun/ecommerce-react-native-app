@@ -5,7 +5,8 @@ import { Cards } from "../../components/cards/Cards";
 import { AntDesign } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-web";
 import { useNavigation } from "@react-navigation/native";
-
+import { Gradiente } from "../../components/gradiente/index";
+import React,{ ReactFragment } from "react";
 const Produtos = () => {
   const nav = useNavigation();
 
@@ -14,6 +15,8 @@ const Produtos = () => {
   }
 
   return (
+    <React.Fragment>
+      <Gradiente position="top" />
     <Container>
       <Navbar titulo="Produtos" />
       <TouchableOpacity onPress={telaCadastroProduto}>
@@ -72,6 +75,8 @@ const Produtos = () => {
       </Container>
       <Footer />
     </Container>
+    <Gradiente position="bottom" />
+    </React.Fragment>
   );
 };
 

@@ -16,6 +16,7 @@ import { Ionicons } from '@expo/vector-icons';
                     position: 'absolute',
                     marginStart: 160,
                     alignSelf: 'center',
+                    marginTop: '10px',
                 }}
             />
         </WrapperInputSenha>

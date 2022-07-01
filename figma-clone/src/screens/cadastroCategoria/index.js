@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactFragment } from "react-native";
+import Gradiente from "../../components/gradiente/index";
 import Botao from "../../components/botao/Botao";
 import Input from "../../components/input/Input";
 import Navbar from "../../components/navbar/Navbar";
@@ -15,12 +16,15 @@ const CadastroCategoria = () => {
 
   return (
     <React.Fragment>
+      <Gradiente position="top"></Gradiente>
+      <Navbar titulo="Cadastro de Categoria" />
       <Container>
-        <Navbar titulo="Cadastro de Categoria" />
+        
         <Input placeholder="Nome" />
         <Input placeholder="Imagem" />
         <Botao onPress={telaMarketplace} texto="CADASTRAR" />
       </Container>
+      <Gradiente position="bottom"></Gradiente>
     </React.Fragment>
   );
 };

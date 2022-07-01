@@ -6,7 +6,7 @@ import { Input } from "../../components/input/Input";
 import { InputSenha } from "../../components/inputSenha/index";
 import { Botao } from "../../components/botao/Botao";
 import { useNavigation } from "@react-navigation/native";
-
+import { Gradiente } from "../../components/gradiente/index";
 import { Container } from "./styles";
 
 export const Cadastro = () => {
@@ -19,14 +19,18 @@ export const Cadastro = () => {
   return (
     <React.Fragment>
       <Navbar titulo="Cadastro" />
+      <Gradiente position="top" />
       <Container>
+      
         <Input placeholder="Nome" />
         <Input placeholder="CPF" />
         <Input placeholder="Data de nascimento" />
         <InputSenha placeholder="Senha" />
         <InputSenha placeholder="Confirmar senha" />
         <Botao onPress={telaConfirmaCadastro} texto="CADASTRAR" />
+        
       </Container>
-    </React.Fragment>
+      <Gradiente position="bottom" />
+      </React.Fragment>
   );
 };

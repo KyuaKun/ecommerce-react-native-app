@@ -4,7 +4,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  
 `;
 
 export const Logo = styled.Image`
@@ -26,7 +26,9 @@ export const TextoInput = styled.TextInput`
   border-radius: 5px;
   border-width: 2px;
   border-color: #00ffff;
+  
   margin-top: 10px;
+  margin-bottom:100px;
   width: 60%;
   padding: 5px;
 `;

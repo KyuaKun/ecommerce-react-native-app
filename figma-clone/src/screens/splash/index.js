@@ -3,7 +3,7 @@ import { View} from "react-native";
 import { Logo,Container, Image } from './styles';
 import { Gradiente } from '../../components/gradiente';
 
-const Splash = () => {
+export const Splash = () => {
   return (
   <View >
     <Container>

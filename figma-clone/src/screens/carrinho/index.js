@@ -1,7 +1,9 @@
 import {
   StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
+import React,{ ReactFragment } from "react";
 import Footer from "../../components/footerMenu/FooterMenu";
+import Gradiente from "../../components/gradiente/index";
 import Navbar from "../../components/navbar/Navbar";
 import {
   BuyInfo,
@@ -13,6 +15,8 @@ import {
 
 const Carrinho = () => {
   return (
+    <React.Fragment>
+      <Gradiente position="top" />
     <Container>
         <Navbar titulo="Carrinho" />
         <Content>
@@ -81,6 +85,8 @@ const Carrinho = () => {
         </Content>
         <Footer />
     </Container>
+    <Gradiente position="bottom" />
+    </React.Fragment>
   );
 };
 
