@@ -8,6 +8,9 @@ import ConfirmaSenha from "./../screens/confirmaSenha/index";
 import { Cadastro } from "./../screens/cadastroUsuario/Cadastro";
 import ConfirmaCadastro from "./../screens/confirmaCadastro/index";
 import Marketplace from "./../screens/marketplace/Marketplace";
+import Favoritos from "./../screens/favoritos/Index";
+import Produtos from "./../screens/produtos/Produtos";
+import Carrinho from "./../screens/carrinho/index";
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -59,6 +62,27 @@ export function Stack() {
       <Screen
         name="Marketplace"
         component={Marketplace}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="Favoritos"
+        component={Favoritos}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="Produtos"
+        component={Produtos}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="Carrinho"
+        component={Carrinho}
         options={{
           headerShown: false,
         }}
