@@ -19,11 +19,11 @@ const AlteraProduto = () => {
         <Input placeholder="10" />
         <Input placeholder="Imagem1.png" />
         <Botao texto="ALTERAR" />
-      </Container>
-      <Footer />
       <Gradiente
         position= 'bottom'
       />
+      </Container>
+      <Footer />
     </>
   );
 };
