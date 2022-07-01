@@ -16,7 +16,7 @@ import {
 
 const Marketplace = () => {
   return (
-    <React.Fragment>
+    <>
       <Gradiente position="top"></Gradiente>
       <Navbar titulo="Marketplace" />
       <Container>
@@ -64,10 +64,10 @@ const Marketplace = () => {
           <Names>Carlos</Names>
           <Names>Alie</Names>
         </NameCreators>
-      </Container>
       <Gradiente position="bottom"></Gradiente>
+      </Container>
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
 
