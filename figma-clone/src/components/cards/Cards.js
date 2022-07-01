@@ -14,7 +14,7 @@ export const Cards = (props) => {
   return (
     <ProdutosContainer>
       <Produto>
-        <FotoProduto source={require("../../../assets/img/5.jpg")} />
+        <FotoProduto source={props.path} />
         <InfoProduto>{props.nome}</InfoProduto>
         <InfoProduto>{props.preco}</InfoProduto>
         <Estoque>{props.estoque}</Estoque>

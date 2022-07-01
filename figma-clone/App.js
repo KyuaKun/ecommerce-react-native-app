@@ -21,15 +21,16 @@ import { Footer } from "./src/components/footerMenu/FooterMenu";
 export default function App() {
   return (
     <>
-       {/* <RecuperarSenha /> */}
+      {/* <RecuperarSenha /> */}
       {/* <Login /> */}
       {/* <ConfirmaSenha /> */}
       {/* <CriaSenha /> */}
       {/* <Favoritos /> */}
       {/* <AlteraProduto /> */}
       {/* <CadastroProduto /> */}
-      <Marketplace />
+      {/*<Marketplace />*/}
       {/* <ConfirmaCompra /> */}
+      <Produtos />
     </>
   );
 }
