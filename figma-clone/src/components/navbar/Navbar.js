@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import styled from "styled-components/native";
+import { TouchableOpacity, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Container = styled.View`
   /* border: 1px solid black; */
@@ -19,9 +20,17 @@ const Titulo = styled.Text`
 `;
 
 export const Navbar = (props) => {
+  const nav = useNavigation();
+
+  function telaLogin() {
+    nav.navigate("Login");
+  }
+
   return (
     <Container>
-      <AntDesign name="logout" size={24} color="#120a8f" />
+      <TouchableOpacity onPress={telaLogin}>
+        <AntDesign name="logout" size={24} color="#120a8f" />
+      </TouchableOpacity>
       <Titulo> {props.titulo} </Titulo>
       <Image
         source={require("../../../assets/img/logo.jpeg")}
