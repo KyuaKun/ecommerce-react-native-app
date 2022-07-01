@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import React from "react";
 
-export const FormatoBotao = styled.View`
+export const FormatoBotao = styled.TouchableOpacity`
   background-color: white;
   border-radius: 5px;
   border-width: 2px;
@@ -22,8 +22,8 @@ export const TextoBotao = styled.Text`
 
 export const Botao = (props) => {
   return (
-    <FormatoBotao>
-    <TextoBotao>{props.texto}</TextoBotao>
+    <FormatoBotao onPress={props.onPress}>
+      <TextoBotao>{props.texto}</TextoBotao>
     </FormatoBotao>
   );
 };
