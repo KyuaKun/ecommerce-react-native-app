@@ -1,22 +1,14 @@
 import {
-  TouchableOpacity,
-  Text,
-  StyleSheet,
-  View,
-  ScrollView,
+  StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
-import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footerMenu/FooterMenu";
+import Navbar from "../../components/navbar/Navbar";
 import {
   BuyInfo,
   Column,
   Container,
   Content,
-  Description,
-  UpperInfo,
-  LowerInfo,
-  Shop,
-  Price,
+  Description, LowerInfo, Price, Shop, UpperInfo
 } from "./styles";
 
 const Carrinho = () => {

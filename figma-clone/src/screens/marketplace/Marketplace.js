@@ -11,7 +11,7 @@ import {
   ImgCreators,
   NameCreators,
   Names,
-  TitleContent
+  TitleContent,
 } from "./styles";
 
 const Marketplace = () => {
@@ -51,7 +51,7 @@ const Marketplace = () => {
             />
           </ContainerImage>
         </Content>
-        <TitleContent style={{paddingLeft: '5%' }}>Criadores</TitleContent>
+        <TitleContent style={{ paddingLeft: "5%" }}>Criadores</TitleContent>
         <ContainerImage>
           <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
           <ImgCreators source={require("../../../assets/img/logo.jpeg")} />
@@ -64,7 +64,6 @@ const Marketplace = () => {
           <Names>Carlos</Names>
           <Names>Alie</Names>
         </NameCreators>
-       
       </Container>
       <Gradiente position="bottom"></Gradiente>
       <Footer />
