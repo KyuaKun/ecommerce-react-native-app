@@ -5,3 +5,8 @@ export const Container = styled.View`
   flex-direction: column;
   margin: 20px 5px 0 5px;
 `;
+
+export const ContainerProdutos = styled.View`
+  flex-direction: row;
+  justify-content: space-around;
+`;
