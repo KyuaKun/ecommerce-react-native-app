@@ -3,12 +3,22 @@ import Footer from "./../../components/footerMenu/FooterMenu";
 import { Navbar } from "./../../components/navbar/Navbar";
 import { Cards } from "../../components/cards/Cards";
 import { AntDesign } from "@expo/vector-icons";
+import { TouchableOpacity } from "react-native-web";
+import { useNavigation } from "@react-navigation/native";
 
 const Produtos = () => {
+  const nav = useNavigation();
+
+  function telaCadastroProduto() {
+    nav.navigate("CadastroProduto");
+  }
+
   return (
     <Container>
       <Navbar titulo="Produtos" />
-      <AntDesign name="plus" size={18} color="darkblue" />
+      <TouchableOpacity onPress={telaCadastroProduto}>
+        <AntDesign name="plus" size={18} color="darkblue" />
+      </TouchableOpacity>
       <Container>
         <ContainerProdutos>
           <Cards

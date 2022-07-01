@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { TouchableOpacity } from "react-native";
 
 export const ProdutosContainer = styled.View`
   margin-top: 10px;
@@ -46,6 +47,6 @@ export const QtdContador = styled.Text`
   margin-inline-start: 30;
 `;
 
-export const ContainerIcones = styled.View`
+export const ContainerIcones = styled.TouchableOpacity`
   flex-direction: row;
 `;

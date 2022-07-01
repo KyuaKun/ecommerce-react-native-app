@@ -9,8 +9,15 @@ import {
   QtdContador,
 } from "./styles";
 import { Feather, Octicons, AntDesign, Entypo } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export const Cards = (props) => {
+  const nav = useNavigation();
+
+  function telaAlteraProduto() {
+    nav.navigate("AlteraProduto");
+  }
+
   return (
     <ProdutosContainer>
       <Produto>
@@ -45,7 +52,7 @@ export const Cards = (props) => {
             }}
           />
         </ContainerIcones>
-        <ContainerIcones>
+        <ContainerIcones onPress={telaAlteraProduto}>
           <Feather name="trash" size={18} color="red" />
           <Octicons name="pencil" size={18} color="blue" />
         </ContainerIcones>

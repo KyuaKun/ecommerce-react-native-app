@@ -13,6 +13,8 @@ import Produtos from "./../screens/produtos/Produtos";
 import Carrinho from "./../screens/carrinho/index";
 import AlteraCategoria from "./../screens/alteraCategoria/index";
 import CadastroCategoria from "./../screens/cadastroCategoria/index";
+import CadastroProduto from "./../screens/cadastroProduto/index";
+import AlteraProduto from "./../screens/alteraProduto/index";
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -99,6 +101,20 @@ export function Stack() {
       <Screen
         name="CadastroCategoria"
         component={CadastroCategoria}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="CadastroProduto"
+        component={CadastroProduto}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="AlteraProduto"
+        component={AlteraProduto}
         options={{
           headerShown: false,
         }}
