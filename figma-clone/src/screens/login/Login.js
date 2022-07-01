@@ -1,29 +1,42 @@
 import React from "react";
-import { LinearGradient } from "expo-linear-gradient";
 import Input from "../../components/input/Input";
 import { InputSenha } from "../../components/inputSenha";
 import Botao from "../../components/botao/Botao";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Container, Logo, TituloLogin, TextInfo, WrapperTextInfo, TextLink  } from "./styles";
-import { SafeAreaView } from "react-native";
-
-
+import { Container, Logo, TituloLogin, TextInfo, TextLink } from "./styles";
+import { useNavigation } from "@react-navigation/native";
+import { Gradiente } from "./../../components/gradiente/index";
 
 const Login = () => {
+  const nav = useNavigation();
+
+  function telaRecuperarSenha() {
+    nav.navigate("RecuperarSenha");
+  }
+
+  function telaCadastro() {
+    nav.navigate("Cadastro");
+  }
+
+  function telaMarketplace() {
+    nav.navigate("Marketplace");
+  }
+
   return (
-      <Container>
-        <Logo source={require("../../../assets/img/logo.jpeg")} />
-        <TituloLogin>Login</TituloLogin>
-        <Input placeholder="Digite seu login" />
-        <InputSenha placeholder="Digite sua senha" />
-                <TextInfo>
-                <TextLink>Esqueceu a sua senha? Clique aqui!</TextLink>
-                </TextInfo>
-        <Botao texto="ENTRAR" />
-                <TextInfo>
-                    <TextLink>Não possui cadastro? Cadastre-se aqui.</TextLink>
-                </TextInfo>
-      </Container>
+    <Container>
+      <Gradiente position="top" />
+      <Logo source={require("../../../assets/img/logo.jpeg")} />
+      <TituloLogin>Login</TituloLogin>
+      <Input placeholder="Digite seu login" />
+      <InputSenha placeholder="Digite sua senha" />
+      <TextInfo onPress={telaRecuperarSenha}>
+        <TextLink>Esqueceu a sua senha? Clique aqui!</TextLink>
+      </TextInfo>
+      <Botao onPress={telaMarketplace} texto="ENTRAR" />
+      <TextInfo onPress={telaCadastro}>
+        <TextLink>Não possui cadastro? Cadastre-se aqui.</TextLink>
+      </TextInfo>
+      <Gradiente position="bottom" />
+    </Container>
   );
 };
 
