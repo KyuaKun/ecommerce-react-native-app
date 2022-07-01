@@ -27,7 +27,7 @@ export default function App() {
       {/* <ConfirmaSenha /> */}
       {/* <CriaSenha /> */}
       {/* <Favoritos /> */}
-      <CadastroProduto />
+      <AlteraProduto />
     </>
   );
 }
