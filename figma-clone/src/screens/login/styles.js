@@ -28,7 +28,6 @@ export const TextoInput = styled.TextInput`
   border-color: #00ffff;
   
   margin-top: 10px;
-  margin-bottom:100px;
   width: 60%;
   padding: 5px;
 `;
@@ -39,12 +38,12 @@ export const TextInfo = styled.TouchableOpacity`
     font-weight: 700;
     line-height: 12px;
     padding: 10px;
-    font-family: 'Roboto';
+    
 `;
 export const TextLink = styled.Text`
     color: #120a8f;
     font-size: 10px;
     font-weight: 700;
     line-height: 12px;
-    font-family: 'Roboto';
+    
 `;

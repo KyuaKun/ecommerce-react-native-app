@@ -6,12 +6,12 @@ export const TextoInput = styled.TextInput`
   border-radius: 5px;
   border-width: 2px;
   border-color: #00ffff;
-  margin-top: 10px;
+  
   width:  188px;
   height: 31px;
   padding: 5px;
 `;
-
+//margin-top: 10px;
 export const Input = ({ placeholder }) => {
   return (
     <>
