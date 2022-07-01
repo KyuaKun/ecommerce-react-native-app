@@ -6,6 +6,7 @@ import Footer from "../../components/footerMenu/FooterMenu";
 
 const Favoritos = () => {
   return (
+    <>
     <Container>
       <Gradiente
           position='top'
@@ -81,8 +82,9 @@ const Favoritos = () => {
       <Gradiente
         position= 'bottom'
       />
-    <Footer/>
     </Container>
+    <Footer/>
+    </>
   );
 };
 

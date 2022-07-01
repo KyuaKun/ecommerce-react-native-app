@@ -23,10 +23,10 @@ const CadastroProduto = () => {
       <Input placeholder="Imagem" />
       <InserirImagem></InserirImagem>
       <Botao texto="CADASTRAR" />
-    </Container>
     <Gradiente
     position= 'bottom'
     />
+    </Container>
     <Footer/>
     </>
   );
