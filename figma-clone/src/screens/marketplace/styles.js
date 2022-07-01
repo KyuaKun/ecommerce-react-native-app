@@ -16,7 +16,7 @@ export const TitleContent = styled.Text`
   color: #120a8f;
   font-weight: bold;
   font-size: 20px;
-  margin: 3% 0 3% 0;
+  margin: 1.5% 0 1.5% 0;
 `;
 
 export const AboutUs = styled.Text`
@@ -50,4 +50,20 @@ export const NameCreators = styled.View`
 export const Names = styled.Text`
   font-size: 12px;
   font-weight: bold;
+  color: #120a8f;
+`;
+
+export const WrapperImageText = styled.View`
+  flex-direction: column;
+`;
+
+export const ImageName = styled.Text`
+  font-weight: bold;
+  align-self: center;
+  color: #120a8f;
+`;
+
+export const ContainerIcons = styled.View`
+  flex-direction: row;
+  align-self: flex-end;
 `;
