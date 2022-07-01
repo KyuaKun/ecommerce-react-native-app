@@ -11,6 +11,8 @@ import Marketplace from "./../screens/marketplace/Marketplace";
 import Favoritos from "./../screens/favoritos/Index";
 import Produtos from "./../screens/produtos/Produtos";
 import Carrinho from "./../screens/carrinho/index";
+import AlteraCategoria from "./../screens/alteraCategoria/index";
+import CadastroCategoria from "./../screens/cadastroCategoria/index";
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -83,6 +85,20 @@ export function Stack() {
       <Screen
         name="Carrinho"
         component={Carrinho}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="AlteraCategoria"
+        component={AlteraCategoria}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="CadastroCategoria"
+        component={CadastroCategoria}
         options={{
           headerShown: false,
         }}

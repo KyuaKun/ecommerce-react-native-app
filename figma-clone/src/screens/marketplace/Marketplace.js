@@ -4,6 +4,7 @@ import Footer from "../../components/footerMenu/FooterMenu";
 import { Gradiente } from "../../components/gradiente";
 import Navbar from "../../components/navbar/Navbar";
 import { Feather, Octicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import {
   AboutUs,
   Container,
@@ -19,6 +20,16 @@ import {
 } from "./styles";
 
 const Marketplace = () => {
+  const nav = useNavigation();
+
+  function telaAlteraCategoria() {
+    nav.navigate("AlteraCategoria");
+  }
+
+  function telaCadastroCategoria() {
+    nav.navigate("CadastroCategoria");
+  }
+
   return (
     <>
       <Gradiente position="top"></Gradiente>
@@ -35,7 +46,9 @@ const Marketplace = () => {
             remaining essentially unchanged.
           </AboutUs>
 
-          <TitleContent>Categorias +</TitleContent>
+          <TitleContent onPress={telaCadastroCategoria}>
+            Categorias +
+          </TitleContent>
           <ContainerImage>
             <WrapperImageText>
               <Image
@@ -50,7 +63,7 @@ const Marketplace = () => {
               <ImageName>Tec3</ImageName>
             </WrapperImageText>
             <WrapperImageText>
-              <ContainerIcons>
+              <ContainerIcons onPress={telaAlteraCategoria}>
                 <Feather name="trash" size={18} color="red" />
                 <Octicons name="pencil" size={18} color="blue" />
               </ContainerIcons>

@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { TouchableOpacity } from "react-native";
 
 export const Container = styled.View`
   /* border: 1px solid red; */
@@ -12,7 +13,7 @@ export const Content = styled.View`
   flex-direction: column;
 `;
 
-export const TitleContent = styled.Text`
+export const TitleContent = styled.TouchableOpacity`
   color: #120a8f;
   font-weight: bold;
   font-size: 20px;
@@ -63,7 +64,7 @@ export const ImageName = styled.Text`
   color: #120a8f;
 `;
 
-export const ContainerIcons = styled.View`
+export const ContainerIcons = styled.TouchableOpacity`
   flex-direction: row;
   align-self: flex-end;
 `;
