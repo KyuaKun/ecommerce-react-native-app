@@ -15,6 +15,7 @@ import AlteraCategoria from "./../screens/alteraCategoria/index";
 import CadastroCategoria from "./../screens/cadastroCategoria/index";
 import CadastroProduto from "./../screens/cadastroProduto/index";
 import AlteraProduto from "./../screens/alteraProduto/index";
+import ConfirmaCompra from "./../screens/confirmaCompra/index";
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -115,6 +116,13 @@ export function Stack() {
       <Screen
         name="AlteraProduto"
         component={AlteraProduto}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="ConfirmaCompra"
+        component={ConfirmaCompra}
         options={{
           headerShown: false,
         }}
