@@ -31,56 +31,56 @@ export const Cards = (props) => {
         <ContainerIcones>
           <AntDesign
             name="minus"
-            size={16}
+            size={11}
             color="darkblue"
             style={{
               marginStart: 6,
               position: "absolute",
               alignSelf: "flex-end",
-              marginVertical: 15,
+              marginVertical: 5,
             }}
           />
           <AntDesign
             name="plus"
-            size={16}
+            size={11}
             color="darkblue"
             style={{
-              marginStart: 60,
+              marginStart: 50,
               position: "absolute",
               alignSelf: "flex-end",
-              marginVertical: 15,
+              marginVertical: 5,
             }}
           />
-        </ContainerIcones>
-        <ContainerIcones onPress={telaAlteraProduto}>
-          <Feather name="trash" size={18} color="red" />
-          <Octicons name="pencil" size={18} color="blue" />
         </ContainerIcones>
         <ContainerIcones>
           <AntDesign
             name="check"
-            size={23}
+            size={15}
             color="darkblue"
             style={{
-              marginStart: 95,
+              marginStart: 80,
               position: "absolute",
               alignSelf: "flex-end",
-              marginVertical: 30,
+              marginVertical: 1,
             }}
           />
           <Entypo
             name="star-outlined"
-            size={23}
+            size={15}
             color="darkblue"
             style={{
-              marginStart: 120,
+              marginStart: 108,
               position: "absolute",
               alignSelf: "flex-end",
-              marginVertical: 30,
+              marginVertical: 1,
             }}
           />
         </ContainerIcones>
       </Produto>
+      <ContainerIcones onPress={telaAlteraProduto}>
+        <Feather name="trash" size={14} color="red" />
+        <Octicons name="pencil" size={14} color="blue" />
+      </ContainerIcones>
     </ProdutosContainer>
   );
 };
