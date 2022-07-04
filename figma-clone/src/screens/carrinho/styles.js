@@ -5,11 +5,9 @@ export const Container = styled.View`
 `;
 
 export const Content = styled.View`
-  /* border: 1px solid black; */
   flex: 1;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 `;
 
 export const BuyInfo = styled.View`
@@ -19,6 +17,7 @@ export const BuyInfo = styled.View`
   width: 95%;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 10%;
 `;
 
 export const UpperInfo = styled.View`
@@ -27,7 +26,6 @@ export const UpperInfo = styled.View`
 `;
 
 export const Column = styled.View`
-  /* border: 1px solid black; */
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
@@ -37,18 +35,16 @@ export const Column = styled.View`
 export const LowerInfo = styled.View`
   flex: 1;
   flex-direction: row;
-  /* padding: 10px; */
 `;
 
 export const Description = styled.Text`
   color: #120a8f;
   font-weight: bold;
-  font-size: 13;
+  font-size: 12;
 `;
 
 export const Shop = styled.View`
   width: 50%;
-  align-items: flex-start;
   justify-content: space-between;
   padding: 5px 0px 5px 20px;
 `;
@@ -58,4 +54,29 @@ export const Price = styled.View`
   align-items: flex-end;
   justify-content: space-between;
   padding: 5px 20px 5px 0px;
+`;
+
+export const CustomButton = styled.TouchableOpacity`
+  background-color: white;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #00ffff;
+  height: 40px;
+  width: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+`;
+
+export const TextButton = styled.Text`
+  font-size: 10.5px;
+  color: #120a8f;
+  font-weight: bold;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  flex-wrap: wrap;
+  text-align: center;
+`;
+
+export const ContainerButton = styled.View`
+  flex-direction: row;
 `;
