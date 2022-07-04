@@ -6,6 +6,7 @@ import Input from "../../components/input/Input";
 import Navbar from "../../components/navbar/Navbar";
 import { Container } from "./styles";
 import { useNavigation } from "@react-navigation/native";
+import { InserirImagem } from "../../components/inserirImagem/InserirImagem";
 
 const CadastroCategoria = () => {
   const nav = useNavigation();
@@ -19,9 +20,9 @@ const CadastroCategoria = () => {
       <Gradiente position="top"></Gradiente>
       <Navbar titulo="Cadastro de Categoria" />
       <Container>
-        
         <Input placeholder="Nome" />
         <Input placeholder="Imagem" />
+        <InserirImagem />
         <Botao onPress={telaMarketplace} texto="CADASTRAR" />
       </Container>
       <Gradiente position="bottom"></Gradiente>
