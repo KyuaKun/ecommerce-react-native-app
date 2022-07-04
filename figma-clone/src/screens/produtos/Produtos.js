@@ -6,7 +6,8 @@ import { AntDesign } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-web";
 import { useNavigation } from "@react-navigation/native";
 import { Gradiente } from "../../components/gradiente/index";
-import React,{ ReactFragment } from "react";
+import React from "react";
+
 const Produtos = () => {
   const nav = useNavigation();
 
@@ -15,14 +16,16 @@ const Produtos = () => {
   }
 
   return (
-    <React.Fragment>
+    <>
       <Gradiente position="top" />
-    <Container>
       <Navbar titulo="Produtos" />
-      <TouchableOpacity onPress={telaCadastroProduto}>
-        <AntDesign name="plus" size={18} color="darkblue" />
-      </TouchableOpacity>
       <Container>
+        <TouchableOpacity
+          onPress={telaCadastroProduto}
+          style={{ marginLeft: "15px" }}
+        >
+          <AntDesign name="plus" size={18} color="darkblue" />
+        </TouchableOpacity>
         <ContainerProdutos>
           <Cards
             path={require("../../../assets/img/1.jpg")}
@@ -72,11 +75,10 @@ const Produtos = () => {
             contador="0"
           />
         </ContainerProdutos>
+        {/*<Gradiente position="bottom" />*/}
       </Container>
       <Footer />
-    </Container>
-    <Gradiente position="bottom" />
-    </React.Fragment>
+    </>
   );
 };
 
