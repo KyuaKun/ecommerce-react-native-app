@@ -1,22 +1,20 @@
 import styled from "styled-components/native";
-import { TouchableOpacity } from "react-native";
+import { View } from "react-native";
 
 export const Container = styled.View`
-  /* border: 1px solid red; */
   flex: 1;
   flex-direction: column;
 `;
 
 export const Content = styled.View`
-  /* border: 1px solid red; */
   padding: 5%;
   flex-direction: column;
 `;
 
-export const TitleContent = styled.TouchableOpacity`
+export const TitleContent = styled.Text`
   color: #120a8f;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin: 1.5% 0 1.5% 0;
 `;
 
@@ -29,11 +27,10 @@ export const AboutUs = styled.Text`
 `;
 
 export const ContainerImage = styled.View`
-  /* border: 1px solid green; */
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 3% 0 3% 0;
+  margin: 1% 0 1% 0;
 `;
 
 export const ImgCreators = styled.Image`
@@ -67,4 +64,13 @@ export const ImageName = styled.Text`
 export const ContainerIcons = styled.TouchableOpacity`
   flex-direction: row;
   align-self: flex-end;
+`;
+
+export const ContainerIconPlus = styled.View`
+  flex-direction: row;
+`;
+
+export const IconPlus = styled.TouchableOpacity`
+  margin-top: 10px;
+  margin-left: 5px;
 `;

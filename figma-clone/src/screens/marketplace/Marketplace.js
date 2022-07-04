@@ -3,7 +3,7 @@ import { Image, Text } from "react-native";
 import Footer from "../../components/footerMenu/FooterMenu";
 import { Gradiente } from "../../components/gradiente";
 import Navbar from "../../components/navbar/Navbar";
-import { Feather, Octicons } from "@expo/vector-icons";
+import { Feather, Octicons, AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import {
   AboutUs,
@@ -17,6 +17,8 @@ import {
   TitleContent,
   WrapperImageText,
   ContainerIcons,
+  IconPlus,
+  ContainerIconPlus,
 } from "./styles";
 
 const Marketplace = () => {
@@ -41,14 +43,14 @@ const Marketplace = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            and scrambled it to make a type specimen book.
           </AboutUs>
-
-          <TitleContent onPress={telaCadastroCategoria}>
-            Categorias +
-          </TitleContent>
+          <ContainerIconPlus>
+            <TitleContent>Categorias</TitleContent>
+            <IconPlus onPress={telaCadastroCategoria}>
+              <AntDesign name="plus" size={16} color="darkblue" />
+            </IconPlus>
+          </ContainerIconPlus>
           <ContainerImage>
             <WrapperImageText>
               <Image
@@ -64,7 +66,12 @@ const Marketplace = () => {
             </WrapperImageText>
             <WrapperImageText>
               <ContainerIcons onPress={telaAlteraCategoria}>
-                <Feather name="trash" size={18} color="red" />
+                <Feather
+                  name="trash"
+                  size={18}
+                  color="red"
+                  style={{ marginBottom: "5px" }}
+                />
                 <Octicons name="pencil" size={18} color="blue" />
               </ContainerIcons>
               <Image
