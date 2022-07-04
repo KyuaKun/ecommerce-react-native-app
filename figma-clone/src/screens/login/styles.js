@@ -4,7 +4,6 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  
 `;
 
 export const Logo = styled.Image`
@@ -18,6 +17,7 @@ export const TituloLogin = styled.Text`
   font-size: 18px;
   color: #120a8f;
   font-weight: bold;
+  margin-bottom: 20px;
 `;
 
 export const TextoInput = styled.TextInput`
@@ -26,24 +26,22 @@ export const TextoInput = styled.TextInput`
   border-radius: 5px;
   border-width: 2px;
   border-color: #00ffff;
-  
+
   margin-top: 10px;
   width: 60%;
   padding: 5px;
 `;
 
 export const TextInfo = styled.TouchableOpacity`
-    color: #120a8f;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 12px;
-    padding: 10px;
-    
+  color: #120a8f;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  padding: 10px;
 `;
 export const TextLink = styled.Text`
-    color: #120a8f;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 12px;
-    
+  color: #120a8f;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
 `;

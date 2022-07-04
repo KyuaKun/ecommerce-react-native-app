@@ -33,7 +33,7 @@ const Login = () => {
       </TextInfo>
       <Botao onPress={telaMarketplace} texto="ENTRAR" />
       <TextInfo onPress={telaCadastro}>
-        <TextLink>Não possui cadastro? Cadastre-se aqui.</TextLink>
+        <TextLink>Não possui cadastro? Cadastre-se!</TextLink>
       </TextInfo>
       <Gradiente position="bottom" />
     </Container>
