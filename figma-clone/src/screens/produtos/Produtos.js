@@ -75,7 +75,6 @@ const Produtos = () => {
             contador="0"
           />
         </ContainerProdutos>
-        {/*<Gradiente position="bottom" />*/}
       </Container>
       <Footer />
     </>
