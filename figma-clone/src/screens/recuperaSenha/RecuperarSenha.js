@@ -8,8 +8,8 @@ import { useNavigation } from "@react-navigation/native";
 const RecuperarSenha = () => {
   const nav = useNavigation();
 
-  function telaConfirmaSenha() {
-    nav.navigate("ConfirmaSenha");
+  function telaCriaSenha() {
+    nav.navigate("CriaSenha");
   }
 
   return (
@@ -18,7 +18,7 @@ const RecuperarSenha = () => {
       <Logo source={require("../../../assets/img/logo.jpeg")} />
       <TituloSenha>Recuperar Senha</TituloSenha>
       <Input placeholder="Digite seu CPF" />
-      <Botao onPress={telaConfirmaSenha} texto="RECUPERAR" />
+      <Botao onPress={telaCriaSenha} texto="RECUPERAR" />
       <Gradiente position="bottom" />
     </Container>
   );

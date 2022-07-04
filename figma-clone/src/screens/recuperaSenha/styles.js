@@ -17,4 +17,5 @@ export const TituloSenha = styled.Text`
   font-size: 18px;
   color: #120a8f;
   font-weight: bold;
+  margin-bottom: 20px;
 `;
